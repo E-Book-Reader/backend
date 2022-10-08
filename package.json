@@ -6,8 +6,6 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "rimraf": "./node_modules/rimraf/bin.js",
-    "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "MODE=developement nest start",
@@ -37,7 +35,6 @@
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.3.3",
     "reflect-metadata": "^0.1.13",
-    "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
     "typeorm": "^0.3.10"
   },
