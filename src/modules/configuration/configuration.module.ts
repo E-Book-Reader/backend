@@ -15,9 +15,9 @@ const mode: 'developement' | 'production' = (process.env.MODE ||
       load: [configuration],
       isGlobal: true,
       envFilePath: [
-        `env/server.${mode}.env`,
-        `env/database.${mode}.env`,
-        `env/google.${mode}.env`,
+        `./server.${mode}.env`,
+        `./database.${mode}.env`,
+        `./google.${mode}.env`,
       ],
     }),
   ],
