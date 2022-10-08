@@ -3,7 +3,8 @@ import Configuration from './interface';
 export default (): Configuration => ({
   server: {
     prefix: 'api',
-    secret: process.env.SECRET,
+    secret: process.env.SERVER_SECRET,
+    cors: process.env.SERVER_CORS,
     port:
       parseInt(process.env.SERVER_PORT, 10) ||
       3001 /*remove || (or), with validation if not set it will throw an error and crash the application */,

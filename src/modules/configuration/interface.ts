@@ -1,6 +1,7 @@
 export default interface Configuration {
   server: {
     port: number;
+    cors: string;
     prefix: string;
     secret: string;
   };

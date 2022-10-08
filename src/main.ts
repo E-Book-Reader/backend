@@ -9,10 +9,11 @@ const bootstrap = async () => {
   const configService = app.get(ConfigService);
   const port = configService.get<number>('server.port');
   const prefix = configService.get<string>('server.prefix');
+  const cors = configService.get<string>('server.cors');
   app.setGlobalPrefix(prefix);
   app.use(cookieParser());
   /**make a dev mode and a production mode, different configuration for dev mode and production mode */
-  app.enableCors({ credentials: true, origin: 'http://localhost:3000' });
+  app.enableCors({ credentials: true, origin: cors });
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(port);
 };
