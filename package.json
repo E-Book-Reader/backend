@@ -11,7 +11,7 @@
     "start": "MODE=production node dist/main",
     "start:dev": "MODE=developement nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "MODE=production node ./dist/main.js",
+    "start:prod": "MODE=production pwd && echo \"here\" && ls && node ./dist/main.js",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
